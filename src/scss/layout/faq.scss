@@ -1,0 +1,83 @@
+.faq {
+    .hero-banner {
+        background-image: url(../../images/img/faq.jpg);
+        @include mobile {
+            background-image: url(../../images/img/faq-mobile.jpg);
+
+        }
+    }
+
+    .panel-group {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .panel {
+
+        margin-bottom: 30px;
+        box-shadow: 2px 2px 6px 0px #b3afaf78;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .panel-heading {
+        padding: 15px;
+        background: $green;
+
+        @include mobile {
+            padding-right: 30px
+        }
+    }
+
+    .panel-title {
+        margin-bottom: 0;
+
+        a {
+            color: $white;
+            position: relative;
+            display: block;
+
+            // &.collapsed {
+            //     &::before {
+            //         content: "+"
+            //     }
+            // }
+
+            &::before {
+                content: "+";
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                right: 15px;
+                background: $white;
+                color: $green;
+                text-align: center;
+                border-radius: 50%;
+                font-size: 25px;
+
+                @include mobile {
+                    width: 25px;
+                    height: 25px;
+                    right:-20px;
+                    font-size: 20px
+                }
+            }
+
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        a[aria-expanded="true"] {
+            &::before {
+                 content: "-" !important;
+             }
+         }
+
+    }
+
+    .panel-body {
+        padding: 15px 25px;
+    }
+}

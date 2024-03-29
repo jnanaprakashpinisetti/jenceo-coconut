@@ -1,0 +1,16 @@
+.about-us {
+    .hero-banner {
+        background-image: url(../../images/img/about-us.jpg);
+        @include mobile {
+            background-image: url(../../images/img/about-us-mobile.jpg);
+
+        }
+    }
+
+    li {
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0
+        }
+    }
+}

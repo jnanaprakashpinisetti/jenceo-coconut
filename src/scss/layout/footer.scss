@@ -1,0 +1,170 @@
+footer {
+    .footer-wrap {
+        padding: 50px 25px 25px 25px;
+        margin-bottom: 0;
+        background: #403f3f;
+
+        @include mobile {
+            padding: 30px 20px 10px 20px;
+        }
+    }
+
+    h4 {
+        margin-bottom: 15px;
+        color: #dfd2d2;
+
+        @include mobile {
+            font-weight: bold;
+        }
+    }
+
+    ul {
+        padding-left: 0;
+
+        li {
+            margin-bottom: 20px;
+            list-style: none;
+            color: #b3b3b3;
+
+            &::before {
+                display: none;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+        }
+
+        a {
+            color: #b3b3b3;
+
+            &:hover {
+                text-decoration: none;
+                color: $white;
+
+                img {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+    img {
+        margin-right: 10px;
+        width: 100%;
+        max-width: 25px;
+        opacity: 0.6;
+    }
+
+
+    .navbar-bg {
+        background-color: transparent;
+        border-bottom: 0;
+        position: static;
+    }
+
+    .container {
+        margin-bottom: 0;
+    }
+
+    .navbar {
+
+        .navbar-collapse.collapse {
+            display: block;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .navbar-nav {
+            display: block
+        }
+
+        .navbar-brand {
+            display: none
+        }
+
+        .navbar-toggler {
+            display: none
+        }
+
+        .navbar-collapse {
+            @include desktop {
+                display: block !important
+            }
+
+            &::before {
+                display: none;
+            }
+        }
+
+        .nav-link {
+            padding: 5px 5px 5px 0 !important;
+            color: $brand-gray;
+
+            &::before {
+                display: none;
+            }
+
+            &.active {
+                color: $gray;
+                background: none;
+            }
+
+            &:hover {
+                color: $gray;
+            }
+        }
+    }
+
+    .contact-us {
+        .call {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .address {
+            display: flex;
+            align-items: flex-start;
+        }
+    }
+
+    .followus {
+
+        li {
+            display: flex;
+            align-items: center;
+        }
+
+
+
+    }
+
+    .col-md-2 {
+        @include mobile {
+            margin-bottom: 15px
+        }
+    }
+
+    .col-md-3 {
+        @include mobile {
+            margin-bottom: 15px
+        }
+    }
+
+    .copy-wright {
+
+        background-color: #302f2f;
+
+        p {
+            margin-bottom: 0;
+            text-align: center;
+            color: #b3b3b3;
+        }
+
+        padding: 15px;
+
+    }
+}

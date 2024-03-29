@@ -1,0 +1,31 @@
+{
+    "main-title": "OUR SERVICES",
+    "sub-title": "SERVICES",
+    "services": [{
+            "title": "Baby Care",
+            "info": "Give your little ones the love and attention they deserve with our reliable babysitters.Experienced and compassionate, our caregivers provide a safe and nurturing environment for your children. Rest easy knowing they're in capable hands.",
+            "image": "../images/icons/baby-care.svg",
+            "id": "baby-care"
+        },
+        {
+            "title": "Old Age Care",
+            "info": "Trust our compassionate caregivers to provide personalized on physical well-being, emotional support for your loved ones. Our experienced caregivers is committed to ensuring a safe, comfortable, and fulfilling life for seniors.",
+            "image": "../../images/icons/old-age.svg",
+            "id": "old-age-care"
+        },
+        {
+            "title": "Maid / Cook",
+            "info": "Ef.fcient maids and expert cooks at your service. Enjoy a clean home and delectable meals without the stress. Experience the convenience and quality of our professional services.",
+            "image": "../../images/icons/cook.svg",
+            "id": "cook"
+        },
+        {
+            "title": "Physiotherapy ",
+            "info": "Restore your body with our professional physiotherapy services. Our skilled therapists provide personalized care to address your specific needs. Experience the benefits of our therapeutic expertise.",
+            "image": "../../images/icons/physiotherapy .svg",
+            "id": "physiotherapy "
+        }
+    ]
+
+
+}

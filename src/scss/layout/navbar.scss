@@ -1,0 +1,136 @@
+.navbar-bg {
+    margin-bottom: 0;
+    border: none;
+    border-bottom: 1px solid $mercury;
+    background-color: $white;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    top:28px;
+    box-shadow: 3px 3px 3px #3333331c;
+
+    @include mobile {
+        padding-bottom: 10px;
+        box-shadow: none;
+        top:46px 
+
+    }
+}
+
+.navbar-collapse {
+    justify-content: end;
+
+    @include mobile {
+
+        padding-top: 25px;
+        padding-bottom: 15px;
+        height: 100vh;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: $mercury;
+            left: 0;
+            right: 0;
+            top: 60px;
+        }
+    }
+
+
+}
+
+.navbar {
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    @include mobile {
+        background-color: $white;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .navbar-brand {
+        padding: 0;
+
+        @include mobile {
+            margin-left: 15px;
+        }
+
+        img {
+            max-width: 150px;
+        }
+    }
+
+    .navbar-toggler {
+        @include mobile {
+            margin-right: 10px;
+            font-size: 25px;
+        }
+    }
+
+    .nav-link {
+        font-size: 14px;
+        font-weight: 500;
+        color: $gray;
+        font-family: $roboto;
+        padding: 15px !important;
+        position: relative;
+        white-space: nowrap;
+
+        @include mobile {
+            padding: 10px 15px !important
+        }
+
+        &::before {
+            content: "";
+            width: 0;
+            height: 1px;
+            background-color: $green;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: all 0.35s ease-out;
+            -webkit-transition: all 0.35s ease-out;
+
+        }
+
+        &:hover {
+            @include desktop {
+                &::before {
+                    width: 100%;
+                    transition: all 0.35s ease-out;
+                    -webkit-transition: all 0.35s ease-out;
+                }
+            }
+        }
+
+        &.active {
+            color: $green;
+
+            @include mobile {
+                color: $gray;
+                background-color: $green;
+                // &::before {
+                //     width: 100%;
+                //     transition: all 0.35s ease-out;
+                //     -webkit-transition: all 0.35s ease-out;
+                // }
+            }
+        }
+
+
+    }
+
+    .navbar-nav {
+        @include mobile {
+            padding-bottom: 20px;
+            border-bottom: 1px solid $mercury;
+        }
+    }
+
+    .fa {
+        color: $green;
+    }
+}

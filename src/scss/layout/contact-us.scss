@@ -1,0 +1,64 @@
+.contact-us {
+
+    .hero-banner {
+        background-image: url(../../images/img/contact-us.jpg);
+
+        @include mobile {
+            background-image: url(../../images/img/contact-us-mobile.jpg);
+
+        }
+    }
+
+
+    h1 {
+        margin-left: 0
+    }
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        margin-bottom: 0;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .hero-banner {
+        background-color: $light-blue;
+    }
+
+    .card {
+        padding-top: 30px;
+        padding-bottom: 10px;
+        background-color: $white;
+
+        img {
+            max-width: 60px;
+            margin-bottom: 20px
+        }
+
+        a {
+            color: $green;
+        }
+    }
+
+    .img-wrapper {
+        p {
+            margin-bottom: 0;
+            color: $green;
+            font-weight: bold;
+
+        }
+    }
+}
+
+.call-wrap {
+    padding-bottom: 50px;
+
+    h4 {
+        font-size: 20px
+    }
+}

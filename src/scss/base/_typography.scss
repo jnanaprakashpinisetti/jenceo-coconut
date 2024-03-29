@@ -1,0 +1,60 @@
+h1 {
+    font-size: 40px;
+    line-height: normal;
+    font-family: $roboto-b;
+    color: $brand-gray;
+
+    @include mobile {
+        font-size: 32px
+    }
+}
+
+h2 {
+    font-size: 32px;
+    line-height: normal;
+    font-family: $roboto-b;
+    color: $brand-gray;
+
+    @include mobile {
+        font-size: 28px
+    }
+}
+
+h3 {
+    font-size: 28px;
+    line-height: normal;
+    font-family: $roboto-m;
+    color: $brand-gray;
+
+    @include mobile {
+        font-size: 24px
+    }
+}
+
+h4 {
+    font-size: 24px;
+    line-height: normal;
+    font-family: $roboto-m;
+    color: $brand-gray;
+
+    @include mobile {
+        font-size: 20px
+    }
+}
+
+h5 {
+    font-size: 20px;
+    line-height: normal;
+    font-family: $roboto-m;
+    color: $brand-gray;
+
+    @include mobile {
+        font-size: 18px
+    }
+}
+
+p {
+    font-size: 16px;
+    line-height: 22px;
+
+}
