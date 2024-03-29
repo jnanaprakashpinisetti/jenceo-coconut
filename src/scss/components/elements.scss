@@ -1,0 +1,24 @@
+.tab-pane {
+    .sec-bg {
+        padding-right: 15px;
+        padding-left: 15px;
+
+        h1 {
+            position: relative;
+            color: #4C4C4C;
+            color: $white;
+
+            &::before { 
+                content: '';
+                position: absolute;
+                height: 5px;
+                width: 150px;
+                bottom: -20px;
+                background-color: #F3B007;
+            }
+        }
+    }
+
+
+
+}

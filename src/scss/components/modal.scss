@@ -1,0 +1,62 @@
+.modal-dialog {
+    top: 20%;
+    max-width: 350px;
+
+    .btn-primary {
+        min-width: 150px;
+        background-color: $green;
+        border: none;
+
+        &:hover {
+            background-color: #62e135;
+        }
+    }
+
+    h3 {
+        color: $gray;
+        margin-bottom: 20px;
+    }
+}
+
+.modal {
+    &.show {
+        background: #0000009c;
+    }
+}
+
+.modal-header {
+    text-align: center;
+    border-bottom: none;
+    position: relative;
+    margin-bottom: 20px;
+
+    &::before {
+        content: "";
+        background-image: url(../../images/icons/social-media/check.svg);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-color: $green;
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.modal-content {
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.modal-footer {
+    border-top: none;
+    justify-content: center;
+}

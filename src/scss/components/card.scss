@@ -1,0 +1,67 @@
+.home-cards {
+    .col-md-4 {
+        @include mobile {
+            margin-bottom: 15px;
+        }
+
+        img {
+            @include mobile {
+                max-width: 100px;
+            }
+        }
+
+    }
+}
+
+.card {
+    border-radius: 10px;
+    // background-color: $yash;
+    text-align: center;
+    height: 100%;
+    box-shadow: 2px 2px 6px 1px #e5e3e3;
+    overflow: hidden;
+    transition: all 1s;
+
+    @include mobile {
+        margin-bottom: 20px
+    }
+
+    &:hover {
+        img {
+
+            @include desktop {
+                scale: (1.2);
+                transition: all 1s;
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+        max-width: 160px;
+        transition: all 1s;
+    }
+
+    .card-body {
+        border-top: 2px  solid $yash;
+        border-bottom: 2px  solid $yash;
+        margin-top: 10px;
+
+        h4 {
+            color: $green;
+        }
+
+        p {
+            max-height: 180px;
+            overflow: hidden;
+            margin-bottom: 0
+        }
+
+    }
+
+    .btn-wrapper {
+        margin: 15px auto;
+    }
+
+
+}

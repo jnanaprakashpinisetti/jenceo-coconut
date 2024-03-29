@@ -1,6 +1,29 @@
+// Abstracts
+@import 'scss/abstracts/variables';
+@import 'scss/abstracts/media-quries';
+@import 'scss/abstracts/mixins';
+@import 'scss/abstracts/fonts';
+
+// Base
+@import 'scss/base/global';
+@import 'scss/base/typography';
 
 
-@import 'scss/base/variable';
-@import 'scss/global';
-@import 'scss/topNav';
+// Layout
+@import 'scss/layout/navbar';
+@import 'scss/layout/footer';
+@import 'scss/layout/contact-us';
+@import 'scss/layout/faq';
+@import 'scss/layout/ourServices';
+@import 'scss/layout/about-us';
 
+
+// Components
+@import 'scss/components/carousal';
+@import 'scss/components/card';
+@import 'scss/components/choose';
+@import 'scss/components/howToProcess';
+@import 'scss/components/sendMessage';
+@import 'scss/components/formElement';
+@import 'scss/components/modal';
+@import 'scss/components/topNav';

@@ -1,0 +1,40 @@
+.process {
+
+    .col-md-3 {
+        @include mobile {
+            margin-bottom: 15px;
+        }
+    }
+    .card {
+        background-color: $white;
+        box-shadow: none;
+
+        img {
+            max-width: 60px;
+        }
+
+        &:hover {
+            background-color: $blue;
+
+            h4 {
+                color: $white;
+            }
+
+            .card-body {
+                background-color: transparent;
+                color: $white;
+            }
+        }
+
+        .img-wrapper {
+            padding: 15px 0;
+            background-color: $white;
+        }
+    }
+
+  
+
+    h4 {
+        margin-bottom: 15px
+    }
+}

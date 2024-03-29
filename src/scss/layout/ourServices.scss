@@ -1,0 +1,67 @@
+.services {
+    .hero-banner {
+        // background-image: url(../../images/img/services.jpg);
+        @include mobile {
+            // background-image: url(../../images/img/services-mobile.jpg);
+
+        }
+    }
+
+    .service-banner {
+    background: url(../../images/img/services-2.jpg);
+        background-size: cover;
+        background-position: center;
+        
+        @include mobile {
+            background: url(../../images/img/services-2-mobile.jpg);
+            background-position: bottom;
+            height: 750px;
+
+        }
+
+        * {
+            color: $white;
+        }
+
+        h2 {
+            font-size: 40px;
+            @include mobile {
+                font-size: 32px;
+            }
+        }
+    }
+
+
+   ul {
+       list-style: none;
+       li {
+           margin-bottom: 15px;
+           position: relative; 
+           &::before {
+               content: "";
+               width: 13px;
+               height: 13px;
+               position: absolute;
+               left: -25px;
+               top: 6px;
+               background-image: url(../../images/icons/right-icon.svg);
+               background-size: cover;
+               opacity: .8;
+           }
+           &:last-child {
+               margin-bottom: 0
+           }
+       }
+   }
+}
+
+.service-wrap {
+    .row {
+        align-items: flex-start;
+    }
+
+    img {
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px #33333391;
+    }
+}
