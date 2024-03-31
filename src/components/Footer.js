@@ -43,11 +43,11 @@ export default function Footer() {
               <div className="col-md-3">
                 <h4>Follow US</h4>
                 <div className="followus">
-                  <ul>
-                    <li><a href="https://www.facebook.com/profile.php?id=100093798434010" target="_blank" ><img src={facebook} alt="facebook" />Facebook</a></li>
-                    <li><a href="https://www.instagram.com/jenceohomecare/" target="_blank" ><img src={instagram} alt="instagram" />Instagram</a></li>
-                    <li><a href="https://twitter.com/JenCeoHomeCare" target="_blank" ><img src={twitter} alt="twitter" />Twitter</a></li>
-                    <li><a href="https://www.youtube.com/@JenCeo-hz3gn" target="_blank" ><img src={youtube} alt="youtube" />YouTube</a></li>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100093798434010" target="_blank" rel="noreferrer"><img src={facebook} alt="facebook" />Facebook</a></li>
+                    <li><a href="https://www.instagram.com/jenceohomecare/" target="_blank" rel="noreferrer"><img src={instagram} alt="instagram" />Instagram</a></li>
+                    <li><a href="https://twitter.com/JenCeoHomeCare" target="_blank" rel="noreferrer"><img src={twitter} alt="twitter" />Twitter</a></li>
+                    <li><a href="https://www.youtube.com/@JenCeo-hz3gn" target="_blank" rel="noreferrer"><img src={youtube} alt="youtube" />YouTube</a></li>
                   </ul>
                 </div>
               </div>
