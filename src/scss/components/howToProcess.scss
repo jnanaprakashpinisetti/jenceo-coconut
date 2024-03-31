@@ -13,8 +13,12 @@
             max-width: 60px;
         }
 
+        .card-body {
+            border: none;
+        }
+
         &:hover {
-            background-color: $blue;
+            background-color: $light-green;
 
             h4 {
                 color: $white;
@@ -23,12 +27,13 @@
             .card-body {
                 background-color: transparent;
                 color: $white;
+                border: none;
             }
         }
 
         .img-wrapper {
             padding: 15px 0;
-            background-color: $white;
+            background-color: $green;
         }
     }
 
