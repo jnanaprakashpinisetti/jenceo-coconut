@@ -6,13 +6,14 @@
     position: fixed;
     width: 100%;
     z-index: 5;
-    top:28px;
+    top: 28px;
     box-shadow: 3px 3px 3px #3333331c;
 
     @include mobile {
         padding-bottom: 10px;
         box-shadow: none;
-        top:46px 
+        top: 46px;
+        z-index: 16;
 
     }
 }
@@ -110,7 +111,7 @@
             color: $green;
 
             @include mobile {
-                color: $gray;
+                color: $white;
                 background-color: $green;
                 // &::before {
                 //     width: 100%;
@@ -132,5 +133,32 @@
 
     .fa {
         color: $green;
+    }
+}
+
+.home-care {
+    background-color: $blue;
+    color: $white;
+    padding: 0;
+    border-radius: 5px;
+    max-height: 35px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+        border-radius: 0;
+    }
+
+    &:hover {
+        background-color: $green;
+    }
+
+    a {
+        color: $white;
+        text-decoration: none;
+        padding: 5px 10px;
+        font-size: 14px;
+
     }
 }
